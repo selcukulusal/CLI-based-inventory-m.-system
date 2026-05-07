@@ -9,28 +9,28 @@ namespace InventoryManagementSystem
             string username = "userA";
             int password = 12345;
 
-            Console.WriteLine("Welcome to Selcuk's CLI based Inventory Management System!"));
+            Console.WriteLine("Welcome to Selcuk's CLI based Inventory Management System!");
             Console.WriteLine();
 
             bool IsLoggedin = true;
 
             while (IsLoggedin)
             {
-                Console.Write("Please entry your username: ".Pastel(ConsoleColor.Blue));
+                Console.Write("Please entry your username: ");
                 string? inputUsername = (Console.ReadLine());
 
-                Console.Write("Please entry your password: ".Pastel(ConsoleColor.Blue));
+                Console.Write("Please entry your password: ");
                 int inputPassword = int.TryParse(Console.ReadLine(), out int parsedPassword) ? parsedPassword : 0;
                 Console.WriteLine();
 
                 if (inputUsername == username && inputPassword == password)
                 {
-                    Console.WriteLine($"Entry is Successful! Welcome {username}!".Pastel(ConsoleColor.Green));
+                    Console.WriteLine($"Entry is Successful! Welcome {username}!");
                     break;
                 }
                 else
                 {
-                    Console.WriteLine("Invalid username or password. Please try again.".Pastel(ConsoleColor.Red));
+                    Console.WriteLine("Invalid username or password. Please try again.");
 
                 }
 
